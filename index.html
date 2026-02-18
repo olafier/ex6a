@@ -50,7 +50,9 @@
 			$("button").click(function(){
 			   var t = $('#temp').val();//celsius
 			   var u = $('#unit').val();
-			   
+
+			   if(validate(t)==0) return; //validation failed
+
 			   var t1;
 			   var u1;
 			   
